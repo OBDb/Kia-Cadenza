@@ -1,0 +1,16 @@
+command_id: 770.778.22BC05
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: |-
+    778100B62BC050F1720
+    778210000200400AAAA
+  expected_values:
+    KIA_HAZARD_SW: 0
+    KIA_HL_SW: 1
+- response: |-
+    778100B62BC050F1720
+    778210050200400AAAA
+  expected_values:
+    KIA_HAZARD_SW: 80
+    KIA_HL_SW: 1
