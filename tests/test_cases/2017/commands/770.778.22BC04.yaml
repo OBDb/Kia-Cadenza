@@ -4,6 +4,13 @@ extended_addressing_enabled: false
 test_cases:
 - response: |-
     778100B62BC04002384
+    778216200000002AAAA
+  expected_values:
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 0
+- response: |-
+    778100B62BC04002384
     778216200000042AAAA
   expected_values:
     KIA_LOCK_FL: 0
