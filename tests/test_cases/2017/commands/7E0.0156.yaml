@@ -1,0 +1,10 @@
+command_id: 7E0.0156
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: '7E803415678'
+  expected_values:
+    LGSO2FT1: -6.25
+- response: '7E803415679'
+  expected_values:
+    LGSO2FT1: -5.46875

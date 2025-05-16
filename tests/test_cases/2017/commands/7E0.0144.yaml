@@ -1,0 +1,16 @@
+command_id: 7E0.0144
+can_id_format: ELEVEN_BIT
+extended_addressing_enabled: false
+test_cases:
+- response: 7E80441447DC0
+  expected_values:
+    EQ_RAT: 0.98244
+- response: 7E80441447E00
+  expected_values:
+    EQ_RAT: 0.98439
+- response: 7E80441447E40
+  expected_values:
+    EQ_RAT: 0.98634
+- response: 7E80441447F80
+  expected_values:
+    EQ_RAT: 0.99611

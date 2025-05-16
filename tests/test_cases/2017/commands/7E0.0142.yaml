@@ -1,10 +1,10 @@
-command_id: 7E0.012F
+command_id: 7E0.0142
 can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
-- response: 7E803412F03
+- response: 7E804414236F6
   expected_values:
-    FLI: 1.17647
-- response: 7E803412FFF
+    VPWR: 14.07
+- response: 7E804414237C2
   expected_values:
-    FLI: 100
+    VPWR: 14.274

@@ -1,10 +1,10 @@
-command_id: 7E0.012F
+command_id: 7E0.0121
 can_id_format: ELEVEN_BIT
 extended_addressing_enabled: false
 test_cases:
-- response: 7E803412F03
+- response: 7E804412103AA
   expected_values:
-    FLI: 1.17647
-- response: 7E803412FFF
+    MIL_DIST: 938
+- response: 7E804412103AB
   expected_values:
-    FLI: 100
+    MIL_DIST: 939
