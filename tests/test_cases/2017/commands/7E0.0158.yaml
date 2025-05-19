@@ -5,3 +5,6 @@ test_cases:
 - response: 7E80341587E
   expected_values:
     LGSO2FT2: -1.5625
+- response: 7E80341587F
+  expected_values:
+    LGSO2FT2: -0.78125
