@@ -5,3 +5,6 @@ test_cases:
 - response: 7E804414D03D3
   expected_values:
     MIL_TIME: 979
+- response: 7E804414D0498
+  expected_values:
+    MIL_TIME: 1176

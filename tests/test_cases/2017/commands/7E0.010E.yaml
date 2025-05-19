@@ -11,6 +11,9 @@ test_cases:
 - response: 7E803410EC2
   expected_values:
     SPARKADV: 33
+- response: 7E803410ED2
+  expected_values:
+    SPARKADV: 41
 - response: 7E803410ED4
   expected_values:
     SPARKADV: 42
