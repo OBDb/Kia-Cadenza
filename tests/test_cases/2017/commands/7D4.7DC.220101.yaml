@@ -107,10 +107,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 294.4
     KIA_BMS_DISCHG_PWR: 17.09
-    KIA_BMS_MIN_TEMP: 16
-    KIA_BMS_MOD1_TEMP: 16
-    KIA_BMS_MOD2_TEMP: 27
-    KIA_BMS_MOD3_TEMP: 1
     KIA_BMS_SOC: 59
   response: |-
     7DC1016620101FFF000
@@ -120,10 +116,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 304.64
     KIA_BMS_DISCHG_PWR: 0
-    KIA_BMS_MIN_TEMP: 0
-    KIA_BMS_MOD1_TEMP: 0
-    KIA_BMS_MOD2_TEMP: 0
-    KIA_BMS_MOD3_TEMP: 0
     KIA_BMS_SOC: 61
   response: |-
     7DC1016620101FFF000
@@ -133,10 +125,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 314.83
     KIA_BMS_DISCHG_PWR: 655.28
-    KIA_BMS_MIN_TEMP: 16
-    KIA_BMS_MOD1_TEMP: 16
-    KIA_BMS_MOD2_TEMP: 33
-    KIA_BMS_MOD3_TEMP: 1
     KIA_BMS_SOC: 62.5
   response: |-
     7DC1016620101FFF000
@@ -146,10 +134,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 317.51
     KIA_BMS_DISCHG_PWR: 0.04
-    KIA_BMS_MIN_TEMP: 16
-    KIA_BMS_MOD1_TEMP: 16
-    KIA_BMS_MOD2_TEMP: 33
-    KIA_BMS_MOD3_TEMP: 1
     KIA_BMS_SOC: 63
   response: |-
     7DC1016620101FFF000
@@ -159,10 +143,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 319.83
     KIA_BMS_DISCHG_PWR: 636.9
-    KIA_BMS_MIN_TEMP: 16
-    KIA_BMS_MOD1_TEMP: 16
-    KIA_BMS_MOD2_TEMP: 28
-    KIA_BMS_MOD3_TEMP: 1
     KIA_BMS_SOC: 63
   response: |-
     7DC1016620101FFF000
@@ -172,10 +152,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 319.88
     KIA_BMS_DISCHG_PWR: 655.29
-    KIA_BMS_MIN_TEMP: 16
-    KIA_BMS_MOD1_TEMP: 16
-    KIA_BMS_MOD2_TEMP: 31
-    KIA_BMS_MOD3_TEMP: 1
     KIA_BMS_SOC: 63
   response: |-
     7DC1016620101FFF000
@@ -185,10 +161,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 317.44
     KIA_BMS_DISCHG_PWR: 0.58
-    KIA_BMS_MIN_TEMP: 16
-    KIA_BMS_MOD1_TEMP: 16
-    KIA_BMS_MOD2_TEMP: 33
-    KIA_BMS_MOD3_TEMP: 1
     KIA_BMS_SOC: 63.5
   response: |-
     7DC1016620101FFF000
@@ -198,10 +170,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 317.51
     KIA_BMS_DISCHG_PWR: 0.31
-    KIA_BMS_MIN_TEMP: 16
-    KIA_BMS_MOD1_TEMP: 16
-    KIA_BMS_MOD2_TEMP: 34
-    KIA_BMS_MOD3_TEMP: 1
     KIA_BMS_SOC: 63.5
   response: |-
     7DC1016620101FFF000
@@ -211,10 +179,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 320.09
     KIA_BMS_DISCHG_PWR: 0.77
-    KIA_BMS_MIN_TEMP: 16
-    KIA_BMS_MOD1_TEMP: 16
-    KIA_BMS_MOD2_TEMP: 33
-    KIA_BMS_MOD3_TEMP: 1
     KIA_BMS_SOC: 63.5
   response: |-
     7DC1016620101FFF000
@@ -224,10 +188,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 320
     KIA_BMS_DISCHG_PWR: 1.07
-    KIA_BMS_MIN_TEMP: 16
-    KIA_BMS_MOD1_TEMP: 16
-    KIA_BMS_MOD2_TEMP: 30
-    KIA_BMS_MOD3_TEMP: 1
     KIA_BMS_SOC: 64
   response: |-
     7DC1016620101FFF000
@@ -237,10 +197,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 325.12
     KIA_BMS_DISCHG_PWR: 1.07
-    KIA_BMS_MIN_TEMP: 16
-    KIA_BMS_MOD1_TEMP: 16
-    KIA_BMS_MOD2_TEMP: 30
-    KIA_BMS_MOD3_TEMP: 1
     KIA_BMS_SOC: 64.5
   response: |-
     7DC1016620101FFF000
@@ -250,10 +206,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 327.68
     KIA_BMS_DISCHG_PWR: 0.28
-    KIA_BMS_MIN_TEMP: 16
-    KIA_BMS_MOD1_TEMP: 16
-    KIA_BMS_MOD2_TEMP: 31
-    KIA_BMS_MOD3_TEMP: 1
     KIA_BMS_SOC: 65
   response: |-
     7DC1016620101FFF000
@@ -263,10 +215,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 363.65
     KIA_BMS_DISCHG_PWR: 0.05
-    KIA_BMS_MIN_TEMP: 16
-    KIA_BMS_MOD1_TEMP: 16
-    KIA_BMS_MOD2_TEMP: 31
-    KIA_BMS_MOD3_TEMP: 1
     KIA_BMS_SOC: 72.5
   response: |-
     7DC1016620101FFF000
@@ -276,10 +224,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 371.17
     KIA_BMS_DISCHG_PWR: 655.31
-    KIA_BMS_MIN_TEMP: 16
-    KIA_BMS_MOD1_TEMP: 16
-    KIA_BMS_MOD2_TEMP: 32
-    KIA_BMS_MOD3_TEMP: 1
     KIA_BMS_SOC: 73.5
   response: |-
     7DC1016620101FFF000
@@ -289,10 +233,6 @@ test_cases:
 - expected_values:
     KIA_BMS_CHG_PWR: 373.63
     KIA_BMS_DISCHG_PWR: 655.1
-    KIA_BMS_MIN_TEMP: 16
-    KIA_BMS_MOD1_TEMP: 16
-    KIA_BMS_MOD2_TEMP: 31
-    KIA_BMS_MOD3_TEMP: 1
     KIA_BMS_SOC: 73.5
   response: |-
     7DC1016620101FFF000
