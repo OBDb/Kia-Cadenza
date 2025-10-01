@@ -1,7 +1,14 @@
 command_id: 7E0.014D
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: 7E804414D03D3
-  expected_values:
+- expected_values:
     MIL_TIME: 979
+  response: 7E804414D03D3
+- expected_values:
+    MIL_TIME: 1176
+  response: 7E804414D0498
+- expected_values:
+    MIL_TIME: 2950
+  response: 7E804414D0B86
+- expected_values:
+    MIL_TIME: 4082
+  response: 7E804414D0FF2

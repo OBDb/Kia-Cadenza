@@ -1,11 +1,17 @@
 command_id: 770.778.22BC04
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: |-
+- expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 0
+  response: |-
     778100B62BC04002384
     778216200000002AAAA
-  expected_values:
+- expected_values:
     KIA_BELT_RL: 0
     KIA_BELT_RM: 0
     KIA_BELT_RR: 0
@@ -13,10 +19,10 @@ test_cases:
     KIA_LOCK_FL: 0
     KIA_LOCK_FR: 0
     KIA_REVERSE_GEAR: 0
-- response: |-
+  response: |-
     778100B62BC04002384
     778216200000042AAAA
-  expected_values:
+- expected_values:
     KIA_BELT_RL: 0
     KIA_BELT_RM: 0
     KIA_BELT_RR: 0
@@ -24,3 +30,50 @@ test_cases:
     KIA_LOCK_FL: 0
     KIA_LOCK_FR: 0
     KIA_REVERSE_GEAR: 0
+  response: |-
+    778100B62BC04002384
+    778216200002042AAAA
+- expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 0
+  response: |-
+    778100B62BC04002384
+    778216200800042AAAA
+- expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 0
+  response: |-
+    778100B62BC04302700
+    778212000000000AAAA
+- expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 1
+  response: |-
+    778100B62BC04302700
+    778212008000000AAAA
+- expected_values:
+    KIA_BELT_RL: 0
+    KIA_BELT_RM: 0
+    KIA_BELT_RR: 0
+    KIA_GEAR_R: 0
+    KIA_LOCK_FL: 0
+    KIA_LOCK_FR: 0
+    KIA_REVERSE_GEAR: 1
+  response: |-
+    778100B62BC04302700
+    77821200C000000AAAA
