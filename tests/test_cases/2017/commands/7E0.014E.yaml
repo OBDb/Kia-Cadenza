@@ -1,7 +1,14 @@
 command_id: 7E0.014E
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: 7E804414E03DE
-  expected_values:
+- expected_values:
     CLR_TIME: 990
+  response: 7E804414E03DE
+- expected_values:
+    CLR_TIME: 1183
+  response: 7E804414E049F
+- expected_values:
+    CLR_TIME: 2931
+  response: 7E804414E0B73
+- expected_values:
+    CLR_TIME: 4051
+  response: 7E804414E0FD3

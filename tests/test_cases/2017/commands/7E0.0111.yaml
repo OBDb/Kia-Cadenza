@@ -1,10 +1,11 @@
 command_id: 7E0.0111
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: '7E803411126'
-  expected_values:
+- expected_values:
     TP: 14.90196
-- response: 7E80341113D
-  expected_values:
+  response: '7E803411126'
+- expected_values:
     TP: 23.92157
+  response: 7E80341113D
+- expected_values:
+    TP: 27.84314
+  response: '7E803411147'

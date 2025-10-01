@@ -1,19 +1,32 @@
 command_id: 7E0.0159
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: 7E804415902BC
-  expected_values:
+- expected_values:
+    FRP_ABS: 4070
+  response: '7E80441590197'
+- expected_values:
     FRP_ABS: 7000
-- response: 7E8044159055E
-  expected_values:
+  response: 7E804415902BC
+- expected_values:
+    FRP_ABS: 13490
+  response: '7E80441590545'
+- expected_values:
     FRP_ABS: 13740
-- response: 7E8044159056F
-  expected_values:
+  response: 7E8044159055E
+- expected_values:
+    FRP_ABS: 13870
+  response: 7E8044159056B
+- expected_values:
     FRP_ABS: 13910
-- response: '7E80441590576'
-  expected_values:
+  response: 7E8044159056F
+- expected_values:
     FRP_ABS: 13980
-- response: '7E80441590577'
-  expected_values:
+  response: '7E80441590576'
+- expected_values:
     FRP_ABS: 13990
+  response: '7E80441590577'
+- expected_values:
+    FRP_ABS: 14060
+  response: 7E8044159057E
+- expected_values:
+    FRP_ABS: 14440
+  response: 7E804415905A4

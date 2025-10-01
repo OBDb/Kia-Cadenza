@@ -1,9 +1,22 @@
 command_id: 770.778.22BC07
-can_id_format: ELEVEN_BIT
-extended_addressing_enabled: false
 test_cases:
-- response: |-
+- expected_values:
+    KIA_DEFOG_LIGHT: 0
+  response: |-
     778100B62BC07018008
     778210000000000AAAA
-  expected_values:
+- expected_values:
     KIA_DEFOG_LIGHT: 0
+  response: |-
+    778100B62BC07F80003
+    77821FC00000000AAAA
+- expected_values:
+    KIA_DEFOG_LIGHT: 0
+  response: |-
+    778100B62BC07F80003
+    77821FC00000004AAAA
+- expected_values:
+    KIA_DEFOG_LIGHT: 0
+  response: |-
+    778100B62BC07F80003
+    77821FC00000008AAAA
