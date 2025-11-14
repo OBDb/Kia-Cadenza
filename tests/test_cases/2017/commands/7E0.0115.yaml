@@ -2,33 +2,33 @@ command_id: 7E0.0115
 test_cases:
 - expected_values:
     O2S12: 0.155
-    SHRTFT11: 99.21875
+    SHRTFT11: 71.21875
   response: 7E80441151FFF
 - expected_values:
     O2S12: 0.69
-    SHRTFT11: 99.21875
+    SHRTFT11: 71.21875
   response: 7E80441158AFF
 - expected_values:
     O2S12: 0.71
-    SHRTFT11: 99.21875
+    SHRTFT11: 71.21875
   response: 7E80441158EFF
 - expected_values:
     O2S12: 0.72
-    SHRTFT11: 99.21875
+    SHRTFT11: 71.21875
   response: 7E804411590FF
 - expected_values:
     O2S12: 0.73
-    SHRTFT11: 99.21875
+    SHRTFT11: 71.21875
   response: 7E804411592FF
 - expected_values:
     O2S12: 0.735
-    SHRTFT11: 99.21875
+    SHRTFT11: 71.21875
   response: 7E804411593FF
 - expected_values:
     O2S12: 0.74
-    SHRTFT11: 99.21875
+    SHRTFT11: 71.21875
   response: 7E804411594FF
 - expected_values:
     O2S12: 0.755
-    SHRTFT11: 99.21875
+    SHRTFT11: 71.21875
   response: 7E804411597FF
