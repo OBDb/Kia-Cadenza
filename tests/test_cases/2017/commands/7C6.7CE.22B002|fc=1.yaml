@@ -1,8 +1,21 @@
 command_id: 7C6.7CE.22B002|fc=1
 test_cases:
 - expected_values:
+    KIA_CLUSTER_VOLTAGE: 10.3125
+    KIA_FLI_VOL: 74
+    KIA_FLI_VOL_THIRDGEN: 37
+    KIA_VPWR: 10.3125
+  response: "7CE 10 0A 62 B0 02 C0 00 00 \n7CE 21 00 4A 84 00 00 00 00 "
+- expected_values:
+    KIA_CLUSTER_VOLTAGE: 13.20312
+    KIA_FLI_VOL: 135
+    KIA_FLI_VOL_THIRDGEN: 67.5
+    KIA_VPWR: 13.20312
+  response: "7CE 10 0A 62 B0 02 C0 00 00 \n7CE 21 00 87 A9 00 00 00 00 "
+- expected_values:
     KIA_CLUSTER_VOLTAGE: 12.73438
     KIA_FLI_VOL: 6
+    KIA_FLI_VOL_THIRDGEN: 3
     KIA_VPWR: 12.73438
   response: |-
     7CE100A62B002C00000
@@ -10,34 +23,39 @@ test_cases:
 - expected_values:
     KIA_CLUSTER_VOLTAGE: 12.5
     KIA_FLI_VOL: 7
+    KIA_FLI_VOL_THIRDGEN: 3.5
     KIA_VPWR: 12.5
   response: |-
     7CE100A62B002C00000
     7CE210007A000000000
 - expected_values:
-    KIA_CLUSTER_VOLTAGE: 12.73438
+    KIA_CLUSTER_VOLTAGE: 12.57812
     KIA_FLI_VOL: 15
-    KIA_VPWR: 12.73438
+    KIA_FLI_VOL_THIRDGEN: 7.5
+    KIA_VPWR: 12.57812
   response: |-
     7CE100A62B002C00000
-    7CE21000FA300000000
+    7CE21000FA100000000
 - expected_values:
     KIA_CLUSTER_VOLTAGE: 12.42188
     KIA_FLI_VOL: 20
+    KIA_FLI_VOL_THIRDGEN: 10
     KIA_VPWR: 12.42188
   response: |-
     7CE100A62B002C00000
     7CE2100149F00000000
 - expected_values:
-    KIA_CLUSTER_VOLTAGE: 12.34375
-    KIA_FLI_VOL: 80
-    KIA_VPWR: 12.34375
+    KIA_CLUSTER_VOLTAGE: 8.4375
+    KIA_FLI_VOL: 48
+    KIA_FLI_VOL_THIRDGEN: 24
+    KIA_VPWR: 8.4375
   response: |-
     7CE100A62B002C00000
-    7CE2100509E00000000
+    7CE2100306C00000000
 - expected_values:
     KIA_CLUSTER_VOLTAGE: 12.42188
     KIA_FLI_VOL: 128
+    KIA_FLI_VOL_THIRDGEN: 64
     KIA_VPWR: 12.42188
   response: |-
     7CE100A62B002C00000
@@ -45,6 +63,9 @@ test_cases:
 - expected_values:
     KIA_CLUSTER_VOLTAGE: 13.51562
     KIA_FLI_VOL: 7
+    KIA_FLI_VOL_THIRDGEN: 3.5
+    KIA_ODO_KM: 0
+    KIA_ODO_MI: 60612
     KIA_VPWR: 13.51562
   response: |-
     7CE100F62B002D00000
@@ -53,6 +74,9 @@ test_cases:
 - expected_values:
     KIA_CLUSTER_VOLTAGE: 13.67188
     KIA_FLI_VOL: 10
+    KIA_FLI_VOL_THIRDGEN: 5
+    KIA_ODO_KM: 0
+    KIA_ODO_MI: 60609
     KIA_VPWR: 13.67188
   response: |-
     7CE100F62B002D00000
@@ -61,6 +85,9 @@ test_cases:
 - expected_values:
     KIA_CLUSTER_VOLTAGE: 13.75
     KIA_FLI_VOL: 13
+    KIA_FLI_VOL_THIRDGEN: 6.5
+    KIA_ODO_KM: 0
+    KIA_ODO_MI: 60611
     KIA_VPWR: 13.75
   response: |-
     7CE100F62B002D00000
@@ -69,6 +96,9 @@ test_cases:
 - expected_values:
     KIA_CLUSTER_VOLTAGE: 13.82812
     KIA_FLI_VOL: 15
+    KIA_FLI_VOL_THIRDGEN: 7.5
+    KIA_ODO_KM: 0
+    KIA_ODO_MI: 60602
     KIA_VPWR: 13.82812
   response: |-
     7CE100F62B002D00000
@@ -77,6 +107,9 @@ test_cases:
 - expected_values:
     KIA_CLUSTER_VOLTAGE: 12.26562
     KIA_FLI_VOL: 16
+    KIA_FLI_VOL_THIRDGEN: 8
+    KIA_ODO_KM: 0
+    KIA_ODO_MI: 60612
     KIA_VPWR: 12.26562
   response: |-
     7CE100F62B002D00000
@@ -85,6 +118,9 @@ test_cases:
 - expected_values:
     KIA_CLUSTER_VOLTAGE: 11.71875
     KIA_FLI_VOL: 255
+    KIA_FLI_VOL_THIRDGEN: 127.5
+    KIA_ODO_KM: 0
+    KIA_ODO_MI: 60602
     KIA_VPWR: 11.71875
   response: |-
     7CE100F62B002D00000
@@ -93,6 +129,9 @@ test_cases:
 - expected_values:
     KIA_CLUSTER_VOLTAGE: 11.95312
     KIA_FLI_VOL: 255
+    KIA_FLI_VOL_THIRDGEN: 127.5
+    KIA_ODO_KM: 0
+    KIA_ODO_MI: 60577
     KIA_VPWR: 11.95312
   response: |-
     7CE100F62B002D00000

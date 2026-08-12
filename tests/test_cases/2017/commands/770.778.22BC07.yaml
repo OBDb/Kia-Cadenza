@@ -2,9 +2,35 @@ command_id: 770.778.22BC07
 test_cases:
 - expected_values:
     KIA_DEFOG_LIGHT: 0
+  response: "22BC07\n778 10 0B 62 BC 07 01 80 08 \n778 21 00 00 00 00 00 AA AA "
+- expected_values:
+    KIA_DEFOG_LIGHT: 0
+  response: "778 10 0B 62 BC 07 01 80 08 \n778 21 00 00 00 00 00 AA AA "
+- expected_values:
+    KIA_DEFOG_LIGHT: 0
   response: |-
     778100B62BC07018008
     778210000000000AAAA
+- expected_values:
+    KIA_DEFOG_LIGHT: 0
+  response: |-
+    778100B62BC0701800B
+    77821F080001000AAAA
+- expected_values:
+    KIA_DEFOG_LIGHT: 0
+  response: |-
+    778100B62BC0701800B
+    77821F080001004AAAA
+- expected_values:
+    KIA_DEFOG_LIGHT: 0
+  response: |-
+    778100B62BC0701800B
+    77821F080001008AAAA
+- expected_values:
+    KIA_DEFOG_LIGHT: 0
+  response: |-
+    778100B62BC0701800B
+    77821F08000100CAAAA
 - expected_values:
     KIA_DEFOG_LIGHT: 0
   response: |-
