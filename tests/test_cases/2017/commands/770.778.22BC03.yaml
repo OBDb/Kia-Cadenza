@@ -1,6 +1,20 @@
 command_id: 770.778.22BC03
 test_cases:
 - expected_values:
+    KIA_BELT_DRIV: 1
+    KIA_BELT_DRIVER: 1
+    KIA_BELT_PASS: 0
+    KIA_BELT_PASSENGER: 0
+    KIA_DOOR_FL: 0
+    KIA_DOOR_FR: 1
+    KIA_DOOR_RL: 0
+    KIA_DOOR_RR: 0
+    KIA_HANDBRAKE: 0
+    KIA_HOOD: 0
+    KIA_LOW_BEAMS: 44
+    KIA_TRUNK: 0
+  response: "778 10 0B 62 BC 03 F3 FE 7C \n778 21 62 0A 62 2C 00 AA AA "
+- expected_values:
     KIA_BELT_DRIV: 0
     KIA_BELT_DRIVER: 0
     KIA_BELT_PASS: 0
@@ -11,25 +25,11 @@ test_cases:
     KIA_DOOR_RR: 0
     KIA_HANDBRAKE: 0
     KIA_HOOD: 0
+    KIA_LOW_BEAMS: 0
     KIA_TRUNK: 0
   response: |-
     778100B62BC03F3FE7C
     778216200000000AAAA
-- expected_values:
-    KIA_BELT_DRIV: 1
-    KIA_BELT_DRIVER: 0
-    KIA_BELT_PASS: 1
-    KIA_BELT_PASSENGER: 0
-    KIA_DOOR_FL: 0
-    KIA_DOOR_FR: 0
-    KIA_DOOR_RL: 0
-    KIA_DOOR_RR: 0
-    KIA_HANDBRAKE: 0
-    KIA_HOOD: 0
-    KIA_TRUNK: 0
-  response: |-
-    778100B62BC03F3FE7C
-    778216200062C00AAAA
 - expected_values:
     KIA_BELT_DRIV: 0
     KIA_BELT_DRIVER: 1
@@ -41,6 +41,7 @@ test_cases:
     KIA_DOOR_RR: 0
     KIA_HANDBRAKE: 0
     KIA_HOOD: 0
+    KIA_LOW_BEAMS: 44
     KIA_TRUNK: 0
   response: |-
     778100B62BC03F3FE7C
@@ -56,10 +57,27 @@ test_cases:
     KIA_DOOR_RR: 0
     KIA_HANDBRAKE: 0
     KIA_HOOD: 0
+    KIA_LOW_BEAMS: 46
     KIA_TRUNK: 0
   response: |-
     778100B62BC03F3FE7C
     778216200602E00AAAA
+- expected_values:
+    KIA_BELT_DRIV: 1
+    KIA_BELT_DRIVER: 1
+    KIA_BELT_PASS: 1
+    KIA_BELT_PASSENGER: 0
+    KIA_DOOR_FL: 0
+    KIA_DOOR_FR: 0
+    KIA_DOOR_RL: 0
+    KIA_DOOR_RR: 0
+    KIA_HANDBRAKE: 0
+    KIA_HOOD: 0
+    KIA_LOW_BEAMS: 60
+    KIA_TRUNK: 0
+  response: |-
+    778100B62BC03F3FE7C
+    778216200663C00AAAA
 - expected_values:
     KIA_BELT_DRIV: 0
     KIA_BELT_DRIVER: 0
@@ -71,6 +89,7 @@ test_cases:
     KIA_DOOR_RR: 0
     KIA_HANDBRAKE: 0
     KIA_HOOD: 0
+    KIA_LOW_BEAMS: 0
     KIA_TRUNK: 0
   response: |-
     778100B62BC03F3FE7C
@@ -86,6 +105,7 @@ test_cases:
     KIA_DOOR_RR: 0
     KIA_HANDBRAKE: 0
     KIA_HOOD: 0
+    KIA_LOW_BEAMS: 0
     KIA_TRUNK: 0
   response: |-
     778100B62BC03FFEE20
@@ -101,6 +121,7 @@ test_cases:
     KIA_DOOR_RR: 1
     KIA_HANDBRAKE: 0
     KIA_HOOD: 0
+    KIA_LOW_BEAMS: 0
     KIA_TRUNK: 1
   response: |-
     778100B62BC03FFEE20
