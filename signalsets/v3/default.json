@@ -138,14 +138,6 @@
   "signals": [
     {"id": "CADENZA_FLI", "path": "Fuel", "fmt": { "len": 8, "max": 100, "mul": 100, "div": 255, "nullmin": 0, "unit": "percent" }, "name": "Fuel tank level", "suggestedMetric": "fuelTankLevel"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "00"}, "freq": 1,
-  "signals": [
-    {"id": "CADENZA_FUEL_CUT",               "path": "Fuel",     "fmt": {"bix": 88,  "len": 8, "max": 255, "unit": "scalar" }, "name": "Fuel cut"},
-    {"id": "CADENZA_IDLE_CONTROL_MODE",      "path": "Engine",   "fmt": {"bix": 120, "len": 8, "max": 255, "unit": "scalar" }, "name": "Idle control mode"},
-    {"id": "CADENZA_COOLANT_FAN_LOW_SPEED",  "path": "Movement", "fmt": {"bix": 170, "len": 1, "max": 1,   "unit": "offon"  }, "name": "Coolant fan low speed"},
-    {"id": "CADENZA_COOLANT_FAN_HIGH_SPEED", "path": "Movement", "fmt": {"bix": 171, "len": 1, "max": 1,   "unit": "offon"  }, "name": "Coolant fan high speed"},
-    {"id": "CADENZA_KNOCK_DETECTED",         "path": "Engine",   "fmt": {"bix": 200, "len": 8, "max": 255, "unit": "scalar" }, "name": "Knock detected"}
-  ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "01"}, "freq": 1,
   "signals": [
     {"id": "CADENZA_MIS_1", "path": "Engine", "fmt": {"bix": 56,  "len": 16, "blsb": true, "max": 65535, "unit": "scalar" }, "name": "Misfire count #1"},
@@ -171,32 +163,26 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "06"}, "freq": 5,
   "signals": [
-    {"id": "CADENZA_BAT_CURRENT_BATSENS", "path": "Battery", "fmt": {"bix": 736, "len": 16, "blsb": true, "max": 4095.9375,                                "div": 16,                                     "unit": "amps"    },                                                 "name": "Battery current, battery sensor"},
+    {"id": "CADENZA_BAT_CURRENT_BATSENS", "path": "Battery", "fmt": {"bix": 736, "len": 16, "blsb": true, "max": 2047.9375, "min": -2048,                  "div": 16,     "sign": true,                   "unit": "amps"    },                                                 "name": "Battery current, battery sensor"},
     {"id": "CADENZA_BAT_V_BATSENS",       "path": "Battery", "fmt": {"bix": 752, "len": 16, "blsb": true, "max": 32,                          "mul": 32,   "div": 65535,                                  "unit": "volts"   },                                                 "name": "Battery voltage, battery sensor"},
     {"id": "CADENZA_BAT_T_BATSENS",       "path": "Battery", "fmt": {"bix": 768, "len": 16, "blsb": true, "max": 255.9758,  "min": -255.9836, "mul": 1953, "div": 250000, "sign": true,                   "unit": "celsius" },                                                 "name": "Battery temperature, battery sensor"},
     {"id": "CADENZA_BAT_ST_CHG_BATSENS",  "path": "Battery", "fmt": {"bix": 784, "len": 8,  "max": 100,                     "mul": 20,        "div": 51,                                "unit": "percent" },                "name": "Battery state of charge, battery sensor"}
   ]},
-{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "07"}, "freq": 5,
+{ "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "07"}, "freq": 3600,
   "signals": [
-    {"id": "CADENZA_INJ_TIME_CYL_1",     "path": "Engine", "fmt": {"bix": 32,  "len": 16, "blsb": true,  "max": 500,           "mul": 100, "div": 13107,                   "unit": "milliseconds" },                                            "name": "Injection time, cylinder 1"},
-    {"id": "CADENZA_INJ_TIME_CYL_2",     "path": "Engine", "fmt": {"bix": 48,  "len": 16, "blsb": true,  "max": 500,           "mul": 100, "div": 13107,                   "unit": "milliseconds" },                                            "name": "Injection time, cylinder 2"},
-    {"id": "CADENZA_INJ_TIME_CYL_3",     "path": "Engine", "fmt": {"bix": 64,  "len": 16, "blsb": true,  "max": 500,           "mul": 100, "div": 13107,                   "unit": "milliseconds" },                                            "name": "Injection time, cylinder 3"},
-    {"id": "CADENZA_INJ_TIME_CYL_4",     "path": "Engine", "fmt": {"bix": 80,  "len": 16, "blsb": true,  "max": 500,           "mul": 100, "div": 13107,                   "unit": "milliseconds" },                                            "name": "Injection time, cylinder 4"},
-    {"id": "CADENZA_INJ_TIME_CYL_5",     "path": "Engine", "fmt": {"bix": 96,  "len": 16, "blsb": true,  "max": 500,           "mul": 100, "div": 13107,                   "unit": "milliseconds" },                                            "name": "Injection time, cylinder 5"},
-    {"id": "CADENZA_INJ_TIME_CYL_6",     "path": "Engine", "fmt": {"bix": 112, "len": 16, "blsb": true,  "max": 500,           "mul": 100, "div": 13107,                   "unit": "milliseconds" },                                            "name": "Injection time, cylinder 6"},
-    {"id": "CADENZA_KNOCK_RETARD_CYL_1", "path": "Engine", "fmt": {"bix": 488, "len": 8,  "max": 191.25,             "mul": 3, "div": 4,                 "unit": "degrees" },                     "name": "Knock retard, cylinder 1"},
-    {"id": "CADENZA_KNOCK_RETARD_CYL_2", "path": "Engine", "fmt": {"bix": 496, "len": 8,  "max": 191.25,             "mul": 3, "div": 4,                 "unit": "degrees" },                     "name": "Knock retard, cylinder 2"},
-    {"id": "CADENZA_KNOCK_RETARD_CYL_3", "path": "Engine", "fmt": {"bix": 504, "len": 8,  "max": 191.25,             "mul": 3, "div": 4,                 "unit": "degrees" },                     "name": "Knock retard, cylinder 3"},
-    {"id": "CADENZA_KNOCK_RETARD_CYL_4", "path": "Engine", "fmt": {"bix": 512, "len": 8,  "max": 191.25,             "mul": 3, "div": 4,                 "unit": "degrees" },                     "name": "Knock retard, cylinder 4"},
-    {"id": "CADENZA_KNOCK_RETARD_CYL_5", "path": "Engine", "fmt": {"bix": 520, "len": 8,  "max": 191.25,             "mul": 3, "div": 4,                 "unit": "degrees" },                     "name": "Knock retard, cylinder 5"},
-    {"id": "CADENZA_KNOCK_RETARD_CYL_6", "path": "Engine", "fmt": {"bix": 528, "len": 8,  "max": 191.25,             "mul": 3, "div": 4,                 "unit": "degrees" },                     "name": "Knock retard, cylinder 6"},
-    {"id": "CADENZA_KNOCK_ADPT_CYL_1",   "path": "Engine", "fmt": {"bix": 552, "len": 8,  "max": 191.25,             "mul": 3, "div": 4,                 "unit": "degrees" },                     "name": "Knock adaptation value, cylinder 1"},
-    {"id": "CADENZA_KNOCK_ADPT_CYL_2",   "path": "Engine", "fmt": {"bix": 560, "len": 8,  "max": 191.25,             "mul": 3, "div": 4,                 "unit": "degrees" },                     "name": "Knock adaptation value, cylinder 2"},
-    {"id": "CADENZA_KNOCK_ADPT_CYL_3",   "path": "Engine", "fmt": {"bix": 568, "len": 8,  "max": 191.25,             "mul": 3, "div": 4,                 "unit": "degrees" },                     "name": "Knock adaptation value, cylinder 3"},
-    {"id": "CADENZA_KNOCK_ADPT_CYL_4",   "path": "Engine", "fmt": {"bix": 576, "len": 8,  "max": 191.25,             "mul": 3, "div": 4,                 "unit": "degrees" },                     "name": "Knock adaptation value, cylinder 4"},
-    {"id": "CADENZA_KNOCK_ADPT_CYL_5",   "path": "Engine", "fmt": {"bix": 584, "len": 8,  "max": 191.25,             "mul": 3, "div": 4,                 "unit": "degrees" },                     "name": "Knock adaptation value, cylinder 5"},
-    {"id": "CADENZA_KNOCK_ADPT_CYL_6",   "path": "Engine", "fmt": {"bix": 592, "len": 8,  "max": 191.25,             "mul": 3, "div": 4,                 "unit": "degrees" },                     "name": "Knock adaptation value, cylinder 6"},
-    {"id": "CADENZA_EXH_GAS_T",          "path": "Engine", "fmt": {"bix": 632, "len": 8,  "max": 1225,   "min": -50, "mul": 5,             "add": -50,   "unit": "celsius" },                     "name": "Exhaust gas temperature"}
+    {"id": "CADENZA_KNOCK_RETARD_CYL_1",    "path": "Engine", "fmt": {"bix": 488, "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4,             "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 1"},
+    {"id": "CADENZA_KNOCK_RETARD_CYL_2",    "path": "Engine", "fmt": {"bix": 496, "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4,             "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 2"},
+    {"id": "CADENZA_KNOCK_RETARD_CYL_3",    "path": "Engine", "fmt": {"bix": 504, "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4,             "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 3"},
+    {"id": "CADENZA_KNOCK_RETARD_CYL_4",    "path": "Engine", "fmt": {"bix": 512, "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4,             "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 4"},
+    {"id": "CADENZA_KNOCK_RETARD_CYL_5",    "path": "Engine", "fmt": {"bix": 520, "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4,             "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 5"},
+    {"id": "CADENZA_KNOCK_RETARD_CYL_6",    "path": "Engine", "fmt": {"bix": 528, "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4,             "sign": true, "unit": "degrees" }, "name": "Knock retard cylinder 6"},
+    {"id": "CADENZA_KNOCK_CTRL_ADPT_CYL_1", "path": "Engine", "fmt": {"bix": 552, "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4,             "sign": true, "unit": "degrees" }, "name": "Knock control adaptation value, cylinder 1"},
+    {"id": "CADENZA_KNOCK_CTRL_ADPT_CYL_2", "path": "Engine", "fmt": {"bix": 560, "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4,             "sign": true, "unit": "degrees" }, "name": "Knock control adaptation value, cylinder 2"},
+    {"id": "CADENZA_KNOCK_CTRL_ADPT_CYL_3", "path": "Engine", "fmt": {"bix": 568, "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4,             "sign": true, "unit": "degrees" }, "name": "Knock control adaptation value, cylinder 3"},
+    {"id": "CADENZA_KNOCK_CTRL_ADPT_CYL_4", "path": "Engine", "fmt": {"bix": 576, "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4,             "sign": true, "unit": "degrees" }, "name": "Knock control adaptation value, cylinder 4"},
+    {"id": "CADENZA_KNOCK_CTRL_ADPT_CYL_5", "path": "Engine", "fmt": {"bix": 584, "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4,             "sign": true, "unit": "degrees" }, "name": "Knock control adaptation value, cylinder 5"},
+    {"id": "CADENZA_KNOCK_CTRL_ADPT_CYL_6", "path": "Engine", "fmt": {"bix": 592, "len": 8, "max": 95.25, "min": -96, "mul": 3, "div": 4,             "sign": true, "unit": "degrees" }, "name": "Knock control adaptation value, cylinder 6"},
+    {"id": "CADENZA_EXH_GAS_T",             "path": "Engine", "fmt": {"bix": 632, "len": 8, "max": 1225,  "min": -50, "mul": 5,           "add": -50,               "unit": "celsius" }, "name": "Exhaust gas temperature"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "08"}, "freq": 1,
   "signals": [
