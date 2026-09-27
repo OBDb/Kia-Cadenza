@@ -231,7 +231,7 @@
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "0E"}, "freq": 30,
   "signals": [
-    {"id": "CADENZA_ENG_RUN_TIME_TOT", "path": "Engine", "fmt": {"bix": 80, "len": 16, "blsb": true, "max": 6553.5, "div": 10, "unit": "minutes" }, "name": "Engine run time, total"}
+    {"id": "CADENZA_ENG_RUN_TIME_TOT", "path": "Engine", "fmt": {"bix": 80, "len": 16, "blsb": true, "max": 393209.9999, "mul": 6, "unit": "minutes" }, "name": "Engine run time, total"}
   ]},
 { "hdr": "7E0", "rax": "7E8", "dbg": true, "cmd": {"21": "13"}, "freq": 1,
   "signals": [
