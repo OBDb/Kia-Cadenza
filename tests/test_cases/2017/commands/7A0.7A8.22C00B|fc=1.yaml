@@ -17,6 +17,17 @@ test_cases:
   response: "7A8 10 20 62 C0 0B FF FF FF \n7A8 21 80 FF FF 00 02 FF FF \n7A8 22 00
     02 FF FF 00 02 8D \n7A8 23 34 05 00 00 7B 9D 7B \n7A8 24 9D 7B 9D 7B 9D AA AA "
 - expected_values:
+    CADENZA_TP_FL: null
+    CADENZA_TP_FR: null
+    CADENZA_TP_RL: null
+    CADENZA_TP_RR: null
+    CADENZA_TT_FL: null
+    CADENZA_TT_FR: null
+    CADENZA_TT_RL: null
+    CADENZA_TT_RR: null
+  response: "7A8 10 20 62 C0 0B FF FF FF \n7A8 21 80 FF FF 00 02 FF FF \n7A8 22 00
+    02 FF FF 00 02 FF \n7A8 23 FF 00 02 00 7B 9D 7B \n7A8 24 9D 7B 9D 7B 9D AA AA "
+- expected_values:
     CADENZA_TP_FL: 25.2
     CADENZA_TP_FR: 31.2
     CADENZA_TP_RL: 32
