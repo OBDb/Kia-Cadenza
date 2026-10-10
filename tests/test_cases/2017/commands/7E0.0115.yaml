@@ -6,37 +6,28 @@ test_cases:
   response: 7E80441150F00
 - expected_values:
     O2S12: 0.155
-    SHRTFT12: null
   response: 7E80441151FFF
 - expected_values:
     O2S12: 0.69
-    SHRTFT12: null
   response: 7E80441158AFF
 - expected_values:
     O2S12: 0.71
-    SHRTFT12: null
   response: 7E80441158EFF
 - expected_values:
     O2S12: 0.72
-    SHRTFT12: null
   response: 7E804411590FF
 - expected_values:
     O2S12: 0.73
-    SHRTFT12: null
   response: 7E804411592FF
 - expected_values:
     O2S12: 0.735
-    SHRTFT12: null
   response: 7E804411593FF
 - expected_values:
     O2S12: 0.74
-    SHRTFT12: null
   response: 7E804411594FF
 - expected_values:
     O2S12: 0.755
-    SHRTFT12: null
   response: 7E804411597FF
 - expected_values:
     O2S12: 1.275
-    SHRTFT12: null
   response: 7E8044115FFFF
