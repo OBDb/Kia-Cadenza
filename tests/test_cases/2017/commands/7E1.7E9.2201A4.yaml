@@ -3,7 +3,7 @@ test_cases:
 - expected_values:
     CADENZA_CLUTCH_1_T: 300
     CADENZA_CLUTCH_2_T: 300
-    CADENZA_GEAR_CUR: 4
+    CADENZA_GEAR_CUR: '4'
     CADENZA_GEAR_NXT: 0
   response: |-
     7E910396201A4FFFFFF
@@ -18,7 +18,7 @@ test_cases:
 - expected_values:
     CADENZA_CLUTCH_1_T: 300
     CADENZA_CLUTCH_2_T: 300
-    CADENZA_GEAR_CUR: 1
+    CADENZA_GEAR_CUR: '1'
     CADENZA_GEAR_NXT: 0
   response: |-
     7E910396201A4FFFFFF
