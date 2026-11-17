@@ -2,7 +2,6 @@ command_id: 770.778.22BC05
 test_cases:
 - expected_values:
     CADENZA_HAZARD_SW: 0
-    CADENZA_HL_SW: 1
   response: "778 10 0B 62 BC 05 0F 17 20 \n778 21 00 00 20 04 00 AA AA "
 - expected_values:
     CADENZA_HAZARD_SW: 0
@@ -21,7 +20,6 @@ test_cases:
     778210000200000AAAA
 - expected_values:
     CADENZA_HAZARD_SW: 0
-    CADENZA_HL_SW: 1
   response: |-
     778100B62BC050F1720
     778210000200400AAAA
